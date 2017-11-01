@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+
+    "name": "NitroShare",
+    "version": "1.0",
+
+    "description": "Integration with the NitroShare desktop client",
+    "icons": {
+        "128": "icon128.png"
+    },
+
+    "browser_action": {
+        "default_icon": "icon38.png",
+        "default_popup": "popup.html",
+        "default_title": "Send URL with NitroShare"
+    },
+
+    "permissions": [
+        "activeTab"
+    ]
+}
