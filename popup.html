@@ -1,1 +1,51 @@
-TODO
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html, body {
+                height: 240px;
+                margin: 0;
+                width: 320px;
+            }
+            h1 {
+                font-weight: normal;
+                margin: 0;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            .header {
+                background: #656;
+                color: #fff;
+                padding: 8px;
+            }
+            .content {
+                flex-grow: 1;
+                position: relative;
+                text-overflow: auto;
+            }
+            .spinner {
+                left: 50%;
+                margin: -24px 0 0 -24px;
+                position: absolute;
+                top: 50%;
+            }
+            .devices {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Send to Device</h1>
+            </div>
+            <div class="content">
+                <img src="loading.gif" class="spinner">
+                <ul class="devices"></ul>
+            </div>
+        </div>
+    </body>
+</html>
