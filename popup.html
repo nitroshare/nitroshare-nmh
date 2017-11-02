@@ -7,9 +7,11 @@
                 margin: 0;
                 width: 320px;
             }
+            h1, ul {
+                margin: 0;
+            }
             h1 {
                 font-weight: normal;
-                margin: 0;
             }
             .container {
                 display: flex;
@@ -22,20 +24,49 @@
                 padding: 8px;
             }
             .content {
+                display: flex;
                 flex-grow: 1;
                 position: relative;
                 text-overflow: auto;
             }
-            .spinner {
-                left: 50%;
-                margin: -24px 0 0 -24px;
-                position: absolute;
-                top: 50%;
+            .spinner,
+            .error {
+                align-self: center;
+                display: none;
+                margin: auto;
+            }
+            .error {
+                color: #a55;
+            }
+            .error:before {
+                background-image: url(error.png);
+                content: "";
+                display: block;
+                height: 48px;
+                margin: 0 auto 16px auto;
+                width: 48px;
             }
             .devices {
                 display: none;
+                list-style-type: none;
+                padding: 0;
+                width: 100%;
+            }
+            .devices li a {
+                background: #eee;
+                border-radius: 4px;
+                color: #333;
+                display: block;
+                margin: 4px;
+                padding: 8px;
+                text-decoration: none;
+            }
+            .devices li a:hover {
+                background: #ddd;
             }
         </style>
+        <script src="jquery.min.js"></script>
+        <script src="popup.js"></script>
     </head>
     <body>
         <div class="container">
@@ -44,6 +75,7 @@
             </div>
             <div class="content">
                 <img src="loading.gif" class="spinner">
+                <div class="error"></div>
                 <ul class="devices"></ul>
             </div>
         </div>
