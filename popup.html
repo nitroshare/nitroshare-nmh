@@ -3,9 +3,8 @@
     <head>
         <style>
             html, body {
-                height: 240px;
                 margin: 0;
-                width: 320px;
+                width: 300px;
             }
             h1, ul {
                 margin: 0;
@@ -13,27 +12,16 @@
             h1 {
                 font-weight: normal;
             }
-            .container {
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-            }
             .header {
                 background: #656;
                 color: #fff;
                 padding: 8px;
             }
-            .content {
-                display: flex;
-                flex-grow: 1;
-                position: relative;
-                text-overflow: auto;
-            }
             .spinner,
             .error {
-                align-self: center;
                 display: none;
-                margin: auto;
+                margin: 40px auto;
+                text-align: center;
             }
             .error {
                 color: #a55;
@@ -69,15 +57,15 @@
         <script src="popup.js"></script>
     </head>
     <body>
-        <div class="container">
-            <div class="header">
-                <h1>Send to Device</h1>
+        <div class="header">
+            <h1>Send to Device</h1>
+        </div>
+        <div class="content">
+            <div class="spinner">
+                <img src="loading.gif">
             </div>
-            <div class="content">
-                <img src="loading.gif" class="spinner">
-                <div class="error"></div>
-                <ul class="devices"></ul>
-            </div>
+            <div class="error"></div>
+            <ul class="devices"></ul>
         </div>
     </body>
 </html>

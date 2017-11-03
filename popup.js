@@ -46,8 +46,6 @@ $(function() {
         });
     }
 
-    // TODO: the enumerator is hardcoded in here
-
     // Send the current URL to the specified device
     function sendUrl(device) {
         chrome.tabs.query({
@@ -56,7 +54,7 @@ $(function() {
         }, function (tabs) {
             request(METHOD_SENDURL, {
                 device: device.uuid,
-                enumerator: "mdns",
+                enumerator: device.deviceEnumeratorName,
                 url: tabs[0].url
             });
         });
