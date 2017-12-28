@@ -2,7 +2,7 @@
     "manifest_version": 2,
 
     "name": "NitroShare",
-    "version": "1.0.1",
+    "version": "1.0.2",
 
     "description": "Integration with the NitroShare desktop client",
     "icons": {
@@ -15,6 +15,11 @@
         "default_title": "Send URL with NitroShare"
     },
 
+    "applications": {
+        "gecko": {
+            "id": "nitroshare-firefox@nitroshare.net"
+        }
+    },
     "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv6/L+Ye+qjH2KSnXo5CvYO2J25T03a1PGcu7zELfuPUZWXoEZosoHQ3KVqU6dTKzgLdqKQziJwohflL6KZInxnhOvkqbChQ5JHtufbGRnQ/sELfPmvhCzZx+I2ZW71b0c92QKPJohJjA8+bu8JvBHOjsXLb0t5cH2q0cFItnjto+9ingTQh6uMP6PZ90E7p/yuM+OyQwxq0xhdyRTr8G0dxUE5SLXHvOwmUw6auGFT0FVDe9OaIng8YfrN9H2NEqDbxftPkELHfWkMKsCHjwY3fexknmL4xSK+uQULeEeYYjr459FRZApS87Cb0ph8Yniuq8v9fTgAkceaHt9t0/YQIDAQAB",
 
     "permissions": [

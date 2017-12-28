@@ -33,7 +33,7 @@ $(function() {
         lastRequest;
 
     // Create a port for interacting with the native messaging host
-    let port = chrome.runtime.connectNative('net.nitroshare.chrome');
+    let port = chrome.runtime.connectNative('net.nitroshare.nmh');
 
     // Send a request to the host
     function request(name, parameters) {
