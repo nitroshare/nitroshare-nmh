@@ -87,7 +87,7 @@ $(function() {
             $error.text(msg.error).show();
         } else {
             if (lastRequest == METHOD_DEVICES) {
-                processDeviceList(msg.return);
+                processDeviceList(msg);
             } else {
                 processSendUrl();
             }

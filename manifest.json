@@ -2,7 +2,7 @@
     "manifest_version": 2,
 
     "name": "NitroShare",
-    "version": "1.0.2",
+    "version": "1.0.3",
 
     "description": "Integration with the NitroShare desktop client",
     "icons": {
